@@ -11,7 +11,7 @@ exports.config = {
     },
 
     capabilities: {
-        'browserName': 'chrome',
+        'browserName': 'firefox',
         'chromeOptions': {
             'args': ['show-fps-counter=true', '--no-sandbox']
         }

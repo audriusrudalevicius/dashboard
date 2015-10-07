@@ -12,7 +12,7 @@
     "server": "webpack-dev-server --inline --colors --display-error-details --display-cached --port 3000",
     "watch": "webpack --watch",
     "build": "npm run webpack --colors --display-error-details --display-cached",
-    "webdriver-update": "webdriver-manager update",
+    "webdriver-update": "webdriver-manager update --standalone --firefox",
     "webdriver-start": "webdriver-manager start",
     "preprotractor": "npm run webdriver-update",
     "pretest-e2e": "npm run server &",
