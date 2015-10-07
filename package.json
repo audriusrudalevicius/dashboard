@@ -16,7 +16,8 @@
     "webdriver-start": "webdriver-manager start",
     "preprotractor": "npm run webdriver-update",
     "pretest-e2e": "npm run server &",
-    "test-e2e": "npm run e2e; fuser -k -n tcp 3000"
+    "test-e2e": "npm run e2e",
+    "posttest-e2e": "fuser -k -n tcp 3000"
   },
   "author": "Audrius",
   "license": "closed",
