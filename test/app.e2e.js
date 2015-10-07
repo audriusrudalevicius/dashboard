@@ -16,7 +16,7 @@ describe('App', function() {
     });
 
     it('should have <div>', function() {
-        subject = element(by.deepCss('div')).isPresent();
+        subject = element(by.className('test')).isDisplayed();
         result  = true;
     });
 

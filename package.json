@@ -14,7 +14,9 @@
     "build": "npm run webpack --colors --display-error-details --display-cached",
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start",
-    "preprotractor": "npm run webdriver-update"
+    "preprotractor": "npm run webdriver-update",
+    "pretest-e2e": "npm run server &",
+    "test-e2e": "npm run e2e; fuser -k -n tcp 3000"
   },
   "author": "Audrius",
   "license": "closed",
