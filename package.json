@@ -4,7 +4,8 @@
   "description": "",
   "main": false,
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "install-ci": "npm -g install tsd && tsd install"
   },
   "author": "Audrius",
   "license": "closed",
