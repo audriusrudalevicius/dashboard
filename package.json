@@ -4,8 +4,17 @@
   "description": "",
   "main": false,
   "scripts": {
+    "install-ci": "npm -g install tsd && tsd install",
     "test": "karma start",
-    "install-ci": "npm -g install tsd && tsd install"
+    "protractor": "protractor",
+    "webpack": "webpack",
+    "e2e": "npm run protractor",
+    "server": "webpack-dev-server --inline --colors --display-error-details --display-cached --port 3000",
+    "watch": "webpack --watch",
+    "build": "npm run webpack --colors --display-error-details --display-cached",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start",
+    "preprotractor": "npm run webdriver-update"
   },
   "author": "Audrius",
   "license": "closed",
@@ -24,12 +33,14 @@
     "karma-webpack": "^1.7.0",
     "node-sass": "^3.3.3",
     "phantomjs": "^1.9.18",
+    "protractor": "^2.4.0",
     "reflect-metadata": "^0.1.2",
     "sass-loader": "^3.0.0",
     "style-loader": "^0.12.4",
     "ts-loader": "^0.5.5",
     "typescript": "^1.6.2",
     "wallaby-webpack": "0.0.8",
-    "webpack": "^1.12.2"
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
   }
 }
